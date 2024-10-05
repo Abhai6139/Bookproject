@@ -1,0 +1,31 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+{% block content %}
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="save">
+        </form>
+    </body>
+</html>-->
+
+
+<!--for template inhrtnc-->
+
+
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="save">
+</form>
+
+{%endblock%}

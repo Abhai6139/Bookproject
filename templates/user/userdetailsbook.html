@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/simple-datatables/style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+    <body style="background-color: rgb(141, 94, 185); align-items: center;">
+
+   
+
+
+<h1 style="margin-left: 25rem; color: antiquewhite;">Book detail:</h1>
+       
+<div class="card" style="width: 35rem; align-items: center; margin-left: 20rem;">
+    <img src="{{ book.image.url }}" class="card-img-top" alt="..." style="align-items: center;">
+    <div class="card-body">
+        <p class="card-text" style="font-size: larger; font-weight: 1000;">{{ book.title}}</p>
+        <p class="card-text" style="font-size: larger; font-weight: 800;">Price={{ book.price}}/-</p>
+    </div>
+</div>
+
+</body>
+</html>
